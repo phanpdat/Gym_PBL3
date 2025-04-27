@@ -1,0 +1,14 @@
+F:\STUDYNET\QLGYM\DataAccess\bin\Debug\DataAccess.exe.config
+F:\STUDYNET\QLGYM\DataAccess\bin\Debug\DataAccess.exe
+F:\STUDYNET\QLGYM\DataAccess\bin\Debug\DataAccess.pdb
+F:\STUDYNET\QLGYM\DataAccess\bin\Debug\EntityFramework.dll
+F:\STUDYNET\QLGYM\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+F:\STUDYNET\QLGYM\DataAccess\bin\Debug\EntityFramework.xml
+F:\STUDYNET\QLGYM\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+F:\STUDYNET\QLGYM\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+F:\STUDYNET\QLGYM\DataAccess\obj\Debug\DataAccess.Properties.Resources.resources
+F:\STUDYNET\QLGYM\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.cache
+F:\STUDYNET\QLGYM\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+F:\STUDYNET\QLGYM\DataAccess\obj\Debug\DataAccess.csproj.Up2Date
+F:\STUDYNET\QLGYM\DataAccess\obj\Debug\DataAccess.exe
+F:\STUDYNET\QLGYM\DataAccess\obj\Debug\DataAccess.pdb
