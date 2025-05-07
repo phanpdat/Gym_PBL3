@@ -58,6 +58,9 @@
   <ItemGroup>
     <Compile Include="BLL\HocVienBLL.cs" />
     <Compile Include="DAL\HocVienDAL.cs" />
+    <Compile Include="DTO\Cbb_Item_GT.cs" />
+    <Compile Include="DTO\LichHocHV_View.cs" />
+    <Compile Include="DTO\PT_View_DK.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +69,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VIEW\DkGT_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DkGT_Form.Designer.cs">
+      <DependentUpon>DkGT_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\DkLHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DkLHForm.Designer.cs">
+      <DependentUpon>DkLHForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\DoiMkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DoiMkForm.Designer.cs">
+      <DependentUpon>DoiMkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\DoiTTHVForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DoiTTHVForm.Designer.cs">
+      <DependentUpon>DoiTTHVForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="VIEW\hocVienForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +108,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VIEW\DkGT_Form.resx">
+      <DependentUpon>DkGT_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\DkLHForm.resx">
+      <DependentUpon>DkLHForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\DoiMkForm.resx">
+      <DependentUpon>DoiMkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\DoiTTHVForm.resx">
+      <DependentUpon>DoiTTHVForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VIEW\hocVienForm.resx">
       <DependentUpon>hocVienForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,9 +137,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{4a3ac74f-ea11-40dc-8e75-a4152f3d4ba0}</Project>

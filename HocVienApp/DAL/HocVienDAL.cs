@@ -136,5 +136,50 @@ namespace HOC_VIEN.DAL
             }
         }
 
+        public bool ChangePassword(string userID, string newPassword)
+        {
+            var user = context.USERS.FirstOrDefault(u => u.UserID == userID);
+            if (user != null)
+            {
+                user.Password = newPassword;
+                context.SaveChanges();
+                return true;
+            }
+
+            return false;
+        }
+
+        public List<LICH_HOC> GetLichHocByHocVienID(int hocVienID)
+        {
+            var lichHocs = context.LICH_HOC
+                .Where(lh => lh.HocVienID == hocVienID)
+                .ToList();
+
+            return lichHocs;
+        }
+        public List<GOITAP> GetAll()
+        {
+            return context.GOITAPs.ToList();
+        }
+
+        public List<PT> GetAllPT() => context.PTs.ToList();
+
+        public void SaveLichHoc(List<LICH_HOC> lichHocList)
+        {
+            foreach (var lichHocView in lichHocList)
+            {
+                var lichHocEntity = new LICH_HOC
+                {
+                    HocVienID = lichHocView.HocVienID,
+                    PTID = lichHocView.PTID,
+                    ThuHoc = lichHocView.ThuHoc,
+                    BuoiHoc = lichHocView.BuoiHoc,
+                    NgayDangKy = lichHocView.NgayDangKy
+                };
+
+                context.LICH_HOC.Add(lichHocEntity);
+            }
+            context.SaveChanges();
+        }
     }
 }

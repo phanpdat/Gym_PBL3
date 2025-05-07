@@ -141,6 +141,7 @@
             this.btnDKPT.TabIndex = 88;
             this.btnDKPT.Text = "Đăng Ký Lịch Học";
             this.btnDKPT.UseVisualStyleBackColor = true;
+            this.btnDKPT.Click += new System.EventHandler(this.btnDKPT_Click);
             // 
             // btnDKGt
             // 
@@ -151,6 +152,7 @@
             this.btnDKGt.TabIndex = 87;
             this.btnDKGt.Text = "Đăng Ký Gói Tập";
             this.btnDKGt.UseVisualStyleBackColor = true;
+            this.btnDKGt.Click += new System.EventHandler(this.btnDKGt_Click);
             // 
             // btnDoiTT
             // 
@@ -161,6 +163,7 @@
             this.btnDoiTT.TabIndex = 86;
             this.btnDoiTT.Text = "Đổi Thông Tin";
             this.btnDoiTT.UseVisualStyleBackColor = true;
+            this.btnDoiTT.Click += new System.EventHandler(this.btnDoiTT_Click);
             // 
             // btnThayPass
             // 
@@ -171,6 +174,7 @@
             this.btnThayPass.TabIndex = 85;
             this.btnThayPass.Text = "Đổi Mật Khẩu";
             this.btnThayPass.UseVisualStyleBackColor = true;
+            this.btnThayPass.Click += new System.EventHandler(this.btnThayPass_Click);
             // 
             // dataGridViewLichhoc
             // 

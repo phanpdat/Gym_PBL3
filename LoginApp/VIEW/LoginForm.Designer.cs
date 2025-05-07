@@ -63,6 +63,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(239, 22);
             this.txtPass.TabIndex = 32;
+            this.txtPass.Text = "123456";
             // 
             // txtusername
             // 
@@ -70,6 +71,7 @@
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(239, 22);
             this.txtusername.TabIndex = 31;
+            this.txtusername.Text = "dat1234";
             // 
             // label3
             // 

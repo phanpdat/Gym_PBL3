@@ -8,3 +8,13 @@ F:\STUDYNET\QLGYM\AdminApp\obj\Debug\AdminApp.csproj.GenerateResource.cache
 F:\STUDYNET\QLGYM\AdminApp\obj\Debug\AdminApp.csproj.CoreCompileInputs.cache
 F:\STUDYNET\QLGYM\AdminApp\obj\Debug\AdminApp.exe
 F:\STUDYNET\QLGYM\AdminApp\obj\Debug\AdminApp.pdb
+F:\STUDYNET\QLGYM1\Gym_PBL3\AdminApp\bin\Debug\AdminApp.exe.config
+F:\STUDYNET\QLGYM1\Gym_PBL3\AdminApp\bin\Debug\AdminApp.exe
+F:\STUDYNET\QLGYM1\Gym_PBL3\AdminApp\bin\Debug\AdminApp.pdb
+F:\STUDYNET\QLGYM1\Gym_PBL3\AdminApp\obj\Debug\AdminApp.csproj.AssemblyReference.cache
+F:\STUDYNET\QLGYM1\Gym_PBL3\AdminApp\obj\Debug\AdminApp.Properties.Resources.resources
+F:\STUDYNET\QLGYM1\Gym_PBL3\AdminApp\obj\Debug\AdminApp.VIEW.AdminForm.resources
+F:\STUDYNET\QLGYM1\Gym_PBL3\AdminApp\obj\Debug\AdminApp.csproj.GenerateResource.cache
+F:\STUDYNET\QLGYM1\Gym_PBL3\AdminApp\obj\Debug\AdminApp.csproj.CoreCompileInputs.cache
+F:\STUDYNET\QLGYM1\Gym_PBL3\AdminApp\obj\Debug\AdminApp.exe
+F:\STUDYNET\QLGYM1\Gym_PBL3\AdminApp\obj\Debug\AdminApp.pdb
