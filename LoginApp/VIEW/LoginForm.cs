@@ -63,6 +63,7 @@ namespace LoginApp.VIEW
                         AdminForm adminForm = new AdminForm();
                         adminForm.Show();
                     }
+                    this.Hide();
                 }
                 else
                 {

@@ -1,5 +1,6 @@
 ﻿using DataAccess;
 using HOC_VIEN.BLL;
+using HocVienApp.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,17 @@ namespace HocVienApp.VIEW
             InitializeComponent();
             this.hocVien = HV;
             LoadInforHV();
+            LoadLichHoc();
+        }
+
+        public void LoadLichHoc()
+        {
+            var lichHocList = hocVienBLL.GetLichHocByHocVienID(hocVien.HocVienID);
+
+            dataGridViewLichhoc.DataSource = lichHocList;
+
+            dataGridViewLichhoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
         public void LoadInforHV()
         {
@@ -66,26 +78,60 @@ namespace HocVienApp.VIEW
                 lblthanhtoanPT.Text = "Chưa thanh toán";
                 lblthanhtoanPT.ForeColor = Color.Red;
             }
-            //var lichHoc = lichHocBLL.GetLichHocByHocVienID(hocVien.HocVienID);
-            //LichHocHV_View firstLichHoc = lichHoc.FirstOrDefault();
+            var lichHoc = hocVienBLL.GetLichHocByHocVienID(hocVien.HocVienID);
+            LichHocHV_View firstLichHoc = lichHoc.FirstOrDefault();
 
-            //if (firstLichHoc != null)
-            //{
-            //    lblBD.Text = firstLichHoc.NgayDangKy.HasValue ? firstLichHoc.NgayDangKy.Value.ToString("dd/MM/yyyy") : "N/A";
-            //    DateTime? ngayKetThuc = firstLichHoc.NgayDangKy?.AddMonths(1);
-            //    lblKT.Text = ngayKetThuc.HasValue ? ngayKetThuc.Value.ToString("dd/MM/yyyy") : "N/A";
-            //}
-            //else
-            //{
-            //    lblBD.Text = "N/A";
-            //    lblKT.Text = "N/A";
-            //}
+            if (firstLichHoc != null)
+            {
+                lblBD.Text = firstLichHoc.NgayDangKy.HasValue ? firstLichHoc.NgayDangKy.Value.ToString("dd/MM/yyyy") : "N/A";
+                DateTime? ngayKetThuc = firstLichHoc.NgayDangKy?.AddMonths(1);
+                lblKT.Text = ngayKetThuc.HasValue ? ngayKetThuc.Value.ToString("dd/MM/yyyy") : "N/A";
+            }
+            else
+            {
+                lblBD.Text = "N/A";
+                lblKT.Text = "N/A";
+            }
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
             Application.Restart();
-            Environment.Exit(0);
+        }
+
+        private void btnThayPass_Click(object sender, EventArgs e)
+        {
+            DoiMkForm changePasswordForm = new DoiMkForm(hocVien.UserID);
+            changePasswordForm.Show();
+        }
+
+
+        private void btnDoiTT_Click(object sender, EventArgs e)
+        {
+            DoiTTHVForm changeTTForm = new DoiTTHVForm();
+            changeTTForm.LoadData(hocVien, "HV");
+            changeTTForm.ShowDialog();
+            LoadInforHV();
+        }
+
+        private void btnDKGt_Click(object sender, EventArgs e)
+        {
+
+            if (hocVien.GoTapID != null)
+            {
+                MessageBox.Show("Bạn đã đăng ký gói tập trước đó, không thể đăng ký thêm.");
+                return;
+            }
+            DkGT_Form dkGT_Form = new DkGT_Form(hocVien.HocVienID);
+            dkGT_Form.ShowDialog();
+            LoadInforHV();
+        }
+
+        private void btnDKPT_Click(object sender, EventArgs e)
+        {
+            DkLHForm dkLHForm = new DkLHForm(hocVien);
+            dkLHForm.ShowDialog();
+            LoadLichHoc();
         }
     }
 }
